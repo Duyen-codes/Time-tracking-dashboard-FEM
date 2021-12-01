@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <!-- Person  -->
+    <section class="card card-person">
+      <div class="person-profile">
+        <img class="person-profile-img" src="./images/image-jeremy.png" alt="Jeremy photo">
+        <div class="person-profile-info">
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="timeframes">
+        <p class="timeframe daily">Daily</p>
+        <p class="timeframe weekly"> Weekly</p>
+        <p class="timeframe monthly">Monthly</p>
+      </div>
+    </section>
+
+    <!-- Work  -->
+    <section class="card card-work">
+
+      <div class="card-banner"><img class="card-banner-icon" src="./images/icon-work.svg"></div>
+
+      <div class="card-body">
+        <div class="title-container">
+          <h2 class="card-title">Work</h2>
+          <img src="./images/icon-ellipsis.svg">
+        </div>
+
+        <div class="current-prev">
+          <h3 class="current"> 32hrs</h3>
+          <h4 class="previous">Last Week - 36hrs</h4>
+        </div>
+
+      </div>
+    </section>
+    <!-- Play  -->
+    <section class="card card-play">
+      <div class="card-banner">
+        <img class="card-banner-icon" src="./images/icon-play.svg">
+      </div>
+      <div class="card-body">
+        <div class="title-container">
+          <h2 class="card-title"> Play</h2>
+          <img src="./images/icon-ellipsis.svg">
+        </div>
+        <div class="current-prev">
+          <h3 class="current">10hrs</h3>
+          <h4 class="previous">Last Week - 8hrs</h4>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Study  -->
+    <section class="card card-study">
+      <div class="card-banner"><img class="card-banner-icon" src="./images/icon-study.svg"></div>
+
+      <div class="card-body">
+        <div class="title-container">
+          <h2 class="card-title"> Study</h2>
+          <img src="./images/icon-ellipsis.svg">
+        </div>
+        <div class="current-prev">
+          <h3 class="current">4hrs</h3>
+          <h4 class="previous">Last Week - 7hrs</h4>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Exercise  -->
+    <section class="card card-exercise">
+
+      <div class="card-banner"><img class="card-banner-icon" src="./images/icon-exercise.svg"></div>
+
+      <div class="card-body">
+        <div class="title-container">
+          <h2 class="card-title"> Exercise </h2>
+          <img src="./images/icon-ellipsis.svg">
+        </div>
+
+        <div class="current-prev">
+          <h3 class="current">4hrs</h3>
+          <!-- weekly -->
+          <h4 class="previous">Previous - 5hrs</h4>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Social  -->
+    <section class="card card-social">
+
+      <div class="card-banner"><img class="card-banner-icon" src="./images/icon-social.svg"></div>
+
+      <div class="card-body">
+        <div class="title-container">
+          <h2 class="card-title"> Social </h2>
+          <img src="./images/icon-ellipsis.svg">
+        </div>
+        <div class="current-prev">
+          <h3 class="current">5hrs</h3>
+          <!-- weekly -->
+          <h4 class="previous">Previous - 10hrs</h4>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Self-care  -->
+    <section class="card card-selfcare">
+
+      <div class="card-banner"><img class="card-banner-icon" src="./images/icon-self-care.svg"></div>
+
+      <div class="card-body">
+        <div class="title-container">
+          <h2 class="card-title"> Self Care </h2>
+          <img src="./images/icon-ellipsis.svg">
+        </div>
+
+        <div class="current-prev">
+          <h3 class="current"> 2hrs</h3>
+          <h4 class="previous">Previous - 2hrs</h4>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

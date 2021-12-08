@@ -88,27 +88,27 @@ main {
     
 }
 
-.card-work {
+.work {
     background-color: var(--Light-orange-work);
 }
 
-.card-play {
+.play {
     background-color: var(--Soft-blue-play);
 }
 
-.card-study {
+.study {
     background-color: var(--Lightred-study);
 }
 
-.card-exercise {
+.exercise {
     background-color: var(--Lime-green-exercise);
 }
 
-.card-social {
+.social {
     background-color: var(--Violet-social);
 }
 
-.card-selfcare {
+.self-care {
     background-color: var(--Soft-yellow-selfcare);
 }
 

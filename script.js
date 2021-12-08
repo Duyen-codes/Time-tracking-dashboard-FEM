@@ -64,7 +64,6 @@ const renderCards = async (option) => {
 
                 <div class="current-prev">
                 <h3 class="current">${timeFrameData.current}hrs</h3>
-                <span>-</span>
                 <h4 class="previous">${timeFrameData.previous}hrs</h4>
                 </div>
 

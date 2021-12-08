@@ -1,32 +1,25 @@
 
-
-
 const buttons = document.querySelectorAll('.timeframe');
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         activateClickedButton(button)
         const clickedOption = button.dataset.option
-        console.log(clickedOption)
         renderCards(clickedOption)
     })
 });
 
-let data = []
 
 const activateClickedButton = button => {
     buttons.forEach(b =>
         b.classList.remove('active'))
     button.classList.add('active')
-    console.log(button)
 }
 
 const loadData = async () => {
     const response = await fetch('./data.json')
-    console.log(response);
     const fetchedData = await response.json()
-    let data = fetchedData;
-    console.log(data)
-    buttons[1].click()
+    return fetchedData;
+    // buttons[1].click()
 }
 
 const clearActivities = () => {
@@ -34,10 +27,12 @@ const clearActivities = () => {
     activities.forEach(a => a.remove())
 }
 
-const renderCards = option => {
+const renderCards = async (option) => {
+    const data = await loadData()
     clearActivities()
-    const main = document.getElementsByClassName('main');
+    const main = document.querySelector('main');
     const calcTimeframe = (option) => {
+
         if (option === 'daily') {
             return 'Yesterday'
         } else if (option === 'weekly') {
@@ -48,10 +43,11 @@ const renderCards = option => {
     }
 
     data.forEach(activity => {
+        console.log(data)
         const name = activity.title
-        const activityClass = name.loLowerCase().replace(' ', '-')
-        const timeFrameData = activity.timeframes[clickedOption]
-        const previousTimeframe = calcTimeframe(clickedOption)
+        const activityClass = name.toLowerCase().replace(' ', '-')
+        const timeFrameData = activity.timeframes[option]
+        const previousTimeframe = calcTimeframe(option)
         console.log(previousTimeframe)
 
         const section = document.createElement('section');

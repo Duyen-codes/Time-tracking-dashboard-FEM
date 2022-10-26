@@ -1,5 +1,5 @@
 # Frontend Mentor - Time tracking dashboard
-
+- Live demo: [https://time-tracking-dashboard-fem-eight.vercel.app/](https://time-tracking-dashboard-fem-eight.vercel.app/)
 ### Screenshot
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
